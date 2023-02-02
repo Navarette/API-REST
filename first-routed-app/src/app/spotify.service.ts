@@ -14,7 +14,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/search?q=${query}&type=track`;
     const headers = new HttpHeaders({
       Authorization:
-        ' Bearer BQB1GZFTJTZ73YMzVnz4242mVdYn4zqh0IwS18sGxreu_sgJF9Ue-gRCP8MnkaX6HNwyjG3ZIGmDJdUBzpHPwFoFExjK4YAUOqOt44YT-8Pur3JxNqnj_Yv3MT8p1z31uYNW0RBshjQiOC2zWVCHeKl2tyJA6ah_Xy3rNXwbnshnct4vdMD4s27Oci3lnvr3'
+        ' Bearer BQDf7t3MsC1wcMJA09l1MBWtaElhWtWAuvcX9YwTziUmXYe-Wh6Qp9oXEBd1G84-AJ-FoYmyuFCbLi-evpC6fHDa6-3NXURxCmdmV4R23vE2VrmcnX0VYk13FPhPiN2zNHO2oH2V0QHUBgb232wqJAe4nLaYDYcdcbQw2ZoUV4-dlWBBl_dFQX5WZFToTIzl'
     });
 
     let obsTracks = this.http.get(url, { headers });
@@ -25,7 +25,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/tracks/${id}`;
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer BQB1GZFTJTZ73YMzVnz4242mVdYn4zqh0IwS18sGxreu_sgJF9Ue-gRCP8MnkaX6HNwyjG3ZIGmDJdUBzpHPwFoFExjK4YAUOqOt44YT-8Pur3JxNqnj_Yv3MT8p1z31uYNW0RBshjQiOC2zWVCHeKl2tyJA6ah_Xy3rNXwbnshnct4vdMD4s27Oci3lnvr3'
+        'Bearer BQDf7t3MsC1wcMJA09l1MBWtaElhWtWAuvcX9YwTziUmXYe-Wh6Qp9oXEBd1G84-AJ-FoYmyuFCbLi-evpC6fHDa6-3NXURxCmdmV4R23vE2VrmcnX0VYk13FPhPiN2zNHO2oH2V0QHUBgb232wqJAe4nLaYDYcdcbQw2ZoUV4-dlWBBl_dFQX5WZFToTIzl'
     });
     
     return this.http.get(url, { headers });

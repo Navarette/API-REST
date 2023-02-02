@@ -6,7 +6,7 @@ import { TrackComponent } from './track/track.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
-  { path: 'search', component: SearchComponent },
+  { path: 'search', component: SearchComponent ,pathMatch: 'full'},
   { path: 'tracks/:id', component: TrackComponent }
 ];
 
