@@ -14,7 +14,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/search?q=${query}&type=track`;
     const headers = new HttpHeaders({
       Authorization:
-        ' Bearer BQDf7t3MsC1wcMJA09l1MBWtaElhWtWAuvcX9YwTziUmXYe-Wh6Qp9oXEBd1G84-AJ-FoYmyuFCbLi-evpC6fHDa6-3NXURxCmdmV4R23vE2VrmcnX0VYk13FPhPiN2zNHO2oH2V0QHUBgb232wqJAe4nLaYDYcdcbQw2ZoUV4-dlWBBl_dFQX5WZFToTIzl'
+        ' Bearer BQDzuyPz880QQCwn3lq4VRYuAa7Q8PUiOMGetxOYS6BETINt0e9JpVJjfYXABQ2q5m5fBf-PTTWNSq5a7BbdQGhQzU5iplS3Otxgqp-3TNn6dmuzbVESj0zbYbF0qc7_GURfPlpoOaoEvAfQ5dF5iiLmFs8lNMs-4Q74LjvLsgjRzL5T-pQT_gnRS8dkoOae'
     });
 
     let obsTracks = this.http.get(url, { headers });
@@ -25,7 +25,25 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/tracks/${id}`;
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer BQDf7t3MsC1wcMJA09l1MBWtaElhWtWAuvcX9YwTziUmXYe-Wh6Qp9oXEBd1G84-AJ-FoYmyuFCbLi-evpC6fHDa6-3NXURxCmdmV4R23vE2VrmcnX0VYk13FPhPiN2zNHO2oH2V0QHUBgb232wqJAe4nLaYDYcdcbQw2ZoUV4-dlWBBl_dFQX5WZFToTIzl'
+        'Bearer BQDzuyPz880QQCwn3lq4VRYuAa7Q8PUiOMGetxOYS6BETINt0e9JpVJjfYXABQ2q5m5fBf-PTTWNSq5a7BbdQGhQzU5iplS3Otxgqp-3TNn6dmuzbVESj0zbYbF0qc7_GURfPlpoOaoEvAfQ5dF5iiLmFs8lNMs-4Q74LjvLsgjRzL5T-pQT_gnRS8dkoOae'
+    });
+    
+    return this.http.get(url, { headers });
+  }
+  getArtist(id: string) {
+    const url = `https://api.spotify.com/v1/artists/${id}`;
+    const headers = new HttpHeaders({
+      Authorization:
+        'Bearer BQDzuyPz880QQCwn3lq4VRYuAa7Q8PUiOMGetxOYS6BETINt0e9JpVJjfYXABQ2q5m5fBf-PTTWNSq5a7BbdQGhQzU5iplS3Otxgqp-3TNn6dmuzbVESj0zbYbF0qc7_GURfPlpoOaoEvAfQ5dF5iiLmFs8lNMs-4Q74LjvLsgjRzL5T-pQT_gnRS8dkoOae'
+    });
+    
+    return this.http.get(url, { headers });
+  }
+  getAlbum(id: string) {
+    const url = `	https://api.spotify.com/v1/albums/${id}`;
+    const headers = new HttpHeaders({
+      Authorization:
+        'Bearer BQDzuyPz880QQCwn3lq4VRYuAa7Q8PUiOMGetxOYS6BETINt0e9JpVJjfYXABQ2q5m5fBf-PTTWNSq5a7BbdQGhQzU5iplS3Otxgqp-3TNn6dmuzbVESj0zbYbF0qc7_GURfPlpoOaoEvAfQ5dF5iiLmFs8lNMs-4Q74LjvLsgjRzL5T-pQT_gnRS8dkoOae'
     });
     
     return this.http.get(url, { headers });
