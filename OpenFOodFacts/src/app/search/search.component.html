@@ -1,3 +1,2 @@
-<p>
-    <input type="text" #newquery>
-  </p>
+<input type="text" (keyup)="search($event)" class="form-control" placeholder="Cerca un prodotto" />
+{{data | json}}
